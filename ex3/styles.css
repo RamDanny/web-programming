@@ -1,0 +1,43 @@
+* {
+    color: white;
+    font-family: 'Trebuchet MS';
+    text-align: center;
+}
+
+figure {
+    align-self: center;
+}
+
+/*Gradient Website Background*/
+
+.bggrad {
+    background: linear-gradient(0deg, rgb(43, 39, 115) 0%, rgb(18, 125, 63) 33%, rgb(167, 26, 26) 66%, rgb(43, 39, 115) 100%) repeat;
+}
+
+/*Miscellaneous*/
+
+div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.impact {
+    font-size: x-large; text-align: center;
+}
+
+#title {
+    text-align: center;
+    font-weight: bold;
+}
+
+select, option {
+    color: black;
+}
+
+.notvalid {
+    color: white;
+    background-color: red;
+    width: 40px;
+    text-align: center;
+}
