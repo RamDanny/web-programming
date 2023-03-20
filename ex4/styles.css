@@ -1,0 +1,47 @@
+* {
+    color: black;
+    text-align: center;
+}
+
+.bgimg {
+    background-image: url("jcm6.jpg");
+    background-attachment: fixed;
+    background-size: 110% 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bggrad {
+    background: linear-gradient(90deg, #2b8bc3 0%, #35a7e0 50%, #17bdec 100%) repeat;
+}
+
+.button {
+    background-color: aqua;
+    padding: 15px 20px;
+    border-radius: 4px;
+    border-color: transparent;
+}
+
+.button:hover {
+    border-color: black;
+}
+
+.timer {
+    float: right;
+    font-size: 25px;
+    padding: 30px 30px;
+}
+
+.card {
+    border-radius: 4px;
+    border-color: transparent;
+    margin: 20px;
+    width: 155px;
+    height: 159px;
+}
+
+.card:hover {
+    margin: 18px;
+    border: 2px black solid;
+    transform: scale(1.1);
+}
