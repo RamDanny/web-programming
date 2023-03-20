@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Registration - IC20</title>
+		<style>
+			input {
+				color: black;
+			}
+		</style>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body class="bgred1">
+		<div class="nav">
+			<header>
+				<img src="IC20-2.png" style="margin: 20px; float: left;">
+				<ul>
+					<li><a href='main.html' target='_blank'>Home</a></li>
+					<li><a href='comm.html' target='_blank'>Committee</a></li>
+					<li><a href='call.html' target='_blank'>Call for Papers</a></li>
+					<li><a href='imp.html' target='_blank'>Important Dates</a></li>
+					<li><a href='work.html' target='_blank'>Workshops</a></li>
+					<li><a href='reg.html' target='_blank'>Registration</a></li>
+					<li><a href='contact.html' target='_blank'>Contact</a></li>
+					<li><a href='feedback.html' target='_blank'>Feedback</a></li>
+				</ul>
+			</header>
+		</div>
+		<br><br><br><br><br>
+		<h2 id="title">Registration</h2><br>
+		<form action="main.html" target="_self" method="get" autocomplete="on">
+			<fieldset>
+				<legend>Personal Info</legend><br><br>
+				<label for="fname">First Name</label><br>
+				<input type="text" id="fname" name="fname" required><br><br>
+				<label for="lname">Last Name</label><br>
+				<input type="text" id="lname" name="lname" required><br><br>
+				<label for="bday">Birthday</label><br>
+				<input type="date" id="bday" name="bday" required><br><br>
+			</fieldset>
+			<fieldset>
+				<legend>Contact Info</legend><br><br>
+				<label for="email">Email</label><br>
+				<input type="email" id="email" name="email" required><br><br>
+				<label for="lname">Phone Number</label><br>
+				<input type="text" value="+" pattern="+[0-9]{2}" style="width: 40px;"><input type="tel" id="phone" name="phone" pattern="[0-9]{10}"><br><br>
+			</fieldset><br><br>
+			<fieldset>
+				<legend>Participation Info</legend><br><br>
+				<label>Day(s) of Participation</label><br>
+				<input type="checkbox" id="days1" name="days1"><label for="days1">Day 1 : 7-3-23</label><br>
+      			<input type="checkbox" id="days2" name="days2"><label for="days2">Day 2 : 8-3-23</label><br>
+      			<input type="checkbox" id="days3" name="days3"><label for="days3">Day 3 : 9-3-23</label><br>
+				<br>
+				<label>T-Shirt Size</label><br>
+				<select>
+					<option value="ch1">Small</option>
+					<option value="ch2">Medium</option>
+					<option value="ch3">Large</option>
+					<option value="ch4">XL</option>
+					<option value="ch5">XXL</option>
+				</select>
+			</fieldset><br><br>
+			<input type="submit" id="submit" value="Submit"><br><br>
+		</form>
+		<br><br><br><br><br><br>
+		<footer>
+			<p><i>A website made by The Intelligence Conference©</i></p>
+		</footer>
+	</body>
+</html>
