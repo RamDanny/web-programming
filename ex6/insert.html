@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Insert Record</h1><br><br>
+    <h2>Enter Patient Details</h2>
+    <form action="MyServlet1" method="GET">
+        <input type="text" name="name" id="name" placeholder="Enter Name"><br>
+        <input type="text" name="age" id="age" placeholder="Enter Age" min="1" max="99"><br>
+        <input type="text" name="id" id="id" placeholder="Enter ID"><br>
+        <input type="text" name="address" id="address" placeholder="Enter Address"><br>
+        <input type="text" name="gender" id="gender" placeholder="Enter Gender"><br>
+
+        <input type="radio" name="marital" id="married" value="married">
+        <label for="married">Married</label><br>
+        <input type="radio" name="marital" id="single" value="single">
+        <label for="single">Single</label><br>
+        
+        <input type="date" name="dateofvisit" id="dateofvisit">
+        <label for="dateofvisit">Date of Visit</label><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

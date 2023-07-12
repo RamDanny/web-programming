@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Autocomplete</title>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet">
+        <script src="countries.js"></script>
+    </head>
+    <body>
+            <h1 style="margin-top:80px" class="shadow">Autocomplete</h1>   
+            <form class="box" name="search_countries">
+                <input type="text" list ="countries" name = "country" id="country" placeholder="Enter country" oninput="getCountries()">
+                <datalist id="countries"></datalist> 
+            </form>
+    </body>
+</html>

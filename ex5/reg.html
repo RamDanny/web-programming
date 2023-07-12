@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Registration</title>
+		<style>
+			input, button {
+				color: black;
+			}
+			button {
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+		</style>
+		<link rel="stylesheet" href="styles.css">
+		<script src="code.js"></script>
+	</head>
+	<body class="bggrad">
+		<h2 id="title">Registration</h2><br>
+		<form id="regform" action="http://localhost:8080/ipl52/MyServlet" onsubmit="final()" method="POST">
+			<label>Salutation</label><br><br>
+			<input type="radio" name="salch" id="salch" value="mr" onclick="checkch()"><label for="ch1mr">Mr.</label>
+			<input type="radio" name="salch" id="salch" value="ms" onclick="checkch()"><label for="ch2ms">Ms.</label>
+			<input type="radio" name="salch" id="salch" value="mrs" onclick="checkch()"><label for="ch3mrs">Mrs.</label>
+			<input type="radio" name="salch" id="salch" value="dr" onclick="checkch()"><label for="ch4dr">Dr.</label>
+			<span class="notvalid" id="salcheck"> Select a salutation </span>
+			<br><br><br>
+			<label for="name">Name</label><br><br>
+			<input type="text" name="name" id="name" pattern="[A-Z]\s[A-Z][a-z]*(\s[A-Z][a-z]*)?" onchange="checkname()" required>
+			<span class="notvalid" id="namcheck"> Enter valid name </span>
+			<br><br><br>
+			<label for="uname">Username</label><br><br>
+			<input type="text" name="uname" id="uname" list="unames" pattern="[a-zA-Z]+" onchange="checku()" required>
+			<datalist id="unames">
+				<option value="darkraven">
+				<option value="brightbee">
+				<option value="lightfeather">
+				<option value="fuzzycat">
+				<option value="grizzlybear">
+			</datalist>
+			<span class="notvalid" id="ucheck"> Enter valid name </span>
+			<br><br><br>
+			<label for="pword">Password</label><br><br>
+			<input type="password" name="pword" id="pword" onchange="checkp()" required>
+			<span class="notvalid" id="passcheck"> Enter valid password </span>
+			<br><br><br>
+			<label for="email">Email</label><br><br>
+			<input type="email" name="email" id="email" onchange="checke()" pattern="([a-zA-Z]{4}@some\.com)|([a-zA-Z]{3}\.[a-zA-Z]{3}@some\.org)|([a-zA-Z]{3}@some1\.some2\.net)" required>
+			<span class="notvalid" id="emailcheck"> Enter valid email </span>
+			<br><br><br>
+			<label for="dob">Date of Birth</label><br><br>
+			<input type="date" name="dob" id="dob" onchange="checkdob()" required>
+			<span class="notvalid" id="dobcheck"> Age must be between 18-35 years </span>
+			<br><br><br>
+			<label for="image">Image</label><br><br>
+			<input type="file" name="image" required>
+			<br><br><br>
+			<fieldset>
+				<legend>Languages Known</legend>
+				<input type="checkbox" name="ch1en" id="ch1en" onclick="checkl()"><label for="ch1en">English</label>
+				<input type="checkbox" name="ch2ta" id="ch2ta" onclick="checkl()"><label for="ch2ta">Tamil</label>
+				<input type="checkbox" name="ch3fr" id="ch3fr" onclick="checkl()"><label for="ch3fr">French</label>
+				<input type="checkbox" name="ch4ot" id="ch4ot" onclick="checkl()"><label for="ch4ot">Others</label>
+				<br><br>
+				<input type="text" id="others" placeholder="Specify Language" style="display: none;" autocomplete="language">
+				<br><div style="align-self: center;"><p class="notvalid" id="langcheck" style="width: 250px;"> Atleast two must be selected </p></div>
+			</fieldset>
+			<br><br><br>
+			<label>Additional Expertise</label><br><br>
+			<textarea rows="10" cols="100" style="color: #000; text-align: justify; border: 2px solid black; border-color: #000;"></textarea>
+			<br><br><br>
+			<button type="submit">Register</button>
+			<button type="reset">Clear</button>
+			<br><br>
+		</form>
+	</body>
+</html>

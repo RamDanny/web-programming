@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login Home</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <br>
+        <form name="loginform" action="MyServlet1" method="POST">
+            <h2>Login</h2>
+            <div style="padding: 16px;">
+                <label for="username"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="username" required>
+                <br><br>
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" required>
+                <br><br><br>
+                <input type="submit" name="submit" value="Login" class="button">
+                <br><br><br>
+                <a href="localhost:8080/MyServlet3" class="button">Logout</a>
+            </div>
+        </form>
+    </body>
+</html>

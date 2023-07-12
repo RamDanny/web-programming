@@ -1,0 +1,43 @@
+mysql> create database users;
+Query OK, 1 row affected (0.29 sec)
+
+mysql> use uers;
+ERROR 1049 (42000): Unknown database 'uers'
+mysql> use users;
+Database changed
+mysql> create table users(
+    -> username varchar(40),
+    -> password varchar(40),
+    -> age integer,
+    -> gender varchar(40),
+    -> address varchar(50)
+    -> );
+Query OK, 0 rows affected (1.56 sec)
+
+mysql> select * from users;
+Empty set (0.13 sec)
+
+mysql> insert into users values('shyam', 'password', 20, 'male', '12 main road');
+Query OK, 1 row affected (0.11 sec)
+
+mysql> select * from users;
++----------+----------+------+--------+--------------+
+| username | password | age  | gender | address      |
++----------+----------+------+--------+--------------+
+| shyam    | password |   20 | male   | 12 main road |
++----------+----------+------+--------+--------------+
+1 row in set (0.01 sec)
+
+mysql> truncate table users;
+Query OK, 0 rows affected (0.68 sec)
+
+mysql> insert into users values('shyam', '123', 20, 'male', '12 main road');
+Query OK, 1 row affected (0.08 sec)
+
+mysql> select * from users;
++----------+----------+------+--------+--------------+
+| username | password | age  | gender | address      |
++----------+----------+------+--------+--------------+
+| shyam    | 123      |   20 | male   | 12 main road |
++----------+----------+------+--------+--------------+
+1 row in set (0.00 sec)
